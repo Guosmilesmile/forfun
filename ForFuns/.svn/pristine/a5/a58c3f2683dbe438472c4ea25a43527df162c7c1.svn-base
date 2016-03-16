@@ -1,0 +1,12 @@
+package com.edu.daoimpl;
+
+import org.springframework.stereotype.Repository;
+
+import com.edu.base.BaseDaoImpl;
+import com.edu.dao.IFunctionDao;
+import com.edu.model.FunctionBean;
+
+@Repository("functionDao")
+public class FunctionDaoImpl extends BaseDaoImpl<FunctionBean> implements IFunctionDao{
+
+}

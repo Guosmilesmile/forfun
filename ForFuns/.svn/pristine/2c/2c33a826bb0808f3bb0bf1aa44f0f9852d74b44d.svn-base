@@ -1,0 +1,11 @@
+package com.edu.service;
+
+import java.util.Map;
+
+import com.edu.base.IBaseService;
+import com.edu.model.UserRoleBean;
+
+
+public interface IUserRoleService extends IBaseService<UserRoleBean>{
+
+}

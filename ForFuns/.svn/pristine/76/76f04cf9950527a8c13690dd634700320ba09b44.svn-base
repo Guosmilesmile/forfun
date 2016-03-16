@@ -1,0 +1,73 @@
+package com.edu.model;
+
+import java.beans.Transient;
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+
+@Table(name="r_role")
+@Entity
+@JsonIgnoreProperties(value="roleFunctionBeans")
+public class RoleBean {
+	private Integer id;
+	private String rolename;
+	private Set<RoleFunctionBean> roleFunctionBeans = new HashSet<RoleFunctionBean>();
+	public RoleBean(Integer id, String rolename) {
+		super();
+		this.id = id;
+		this.rolename = rolename;
+	}
+	
+	public RoleBean(Integer id, String rolename,
+			Set<RoleFunctionBean> roleFunctionBeans) {
+		super();
+		this.id = id;
+		this.rolename = rolename;
+		this.roleFunctionBeans = roleFunctionBeans;
+	}
+
+	public RoleBean() {
+		super();
+	}
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	@Column(name="rolename")
+	public String getRolename() {
+		return rolename;
+	}
+	public void setRolename(String rolename) {
+		this.rolename = rolename;
+	}
+	@Transient
+	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER,mappedBy="role")
+	public Set<RoleFunctionBean> getRoleFunctionBeans() {
+		return roleFunctionBeans;
+	}
+
+	public void setRoleFunctionBeans(Set<RoleFunctionBean> roleFunctionBeans) {
+		this.roleFunctionBeans = roleFunctionBeans;
+	}
+	
+	
+	
+	
+}

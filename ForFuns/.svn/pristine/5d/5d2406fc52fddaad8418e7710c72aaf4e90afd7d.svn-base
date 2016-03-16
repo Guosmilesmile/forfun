@@ -1,0 +1,16 @@
+package com.edu.serviceimpl;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.edu.dao.IUserRoleDao;
+import com.edu.service.IUserRoleService;
+
+@Transactional
+@Service("userRoleService")
+public class UserRoleServiceImpl implements IUserRoleService{
+	@Resource
+	private IUserRoleDao userRoleDao;
+}

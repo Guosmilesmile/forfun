@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.edu.service;
+
+import com.edu.base.IBaseService;
+import com.edu.model.UserBean;
+
+public interface IUserService extends IBaseService<UserBean>{
+	public boolean isExist(UserBean user);
+	public void save(UserBean user);
+}

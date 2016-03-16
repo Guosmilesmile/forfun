@@ -1,0 +1,52 @@
+body
+{	
+	font-family: "Microsoft YaHei";
+	font-size: 1.0em;
+	color: #000;
+}
+
+.header-top
+{
+	position: relative;
+}
+
+.content
+{
+	min-height: 500px;
+	margin-top: 50px;
+}
+
+.main_404
+{
+	text-align: center;
+}
+
+.main_404 img
+{
+	width: 60%;
+	margin-bottom: 1em;
+}
+
+.label_wrong
+{
+	font-size: 1.7em;
+	margin-bottom: 1.7em;
+}
+
+a.readmore
+{
+    background: none;
+    border: 2px solid #000;
+    color: #000;
+    padding: 0.3em 1.5em;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.readmore:hover
+{
+    background: #ff5d56;
+    border: 2px solid #ff5d56;
+    color: #fff;
+}

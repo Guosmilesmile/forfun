@@ -1,0 +1,34 @@
+package com.edu.service;
+
+import com.edu.base.IBaseService;
+import com.edu.model.RoleFunction;
+
+public interface IRoleFunctionService extends IBaseService<RoleFunction>{
+	
+	/**
+	 * 判断权限是否存在   1为存在 0为不存在 -1为异常
+	 * @param roleid
+	 * @param functionid
+	 * @return
+	 */
+	public int IsExitRoleFunction(int roleid,int functionid);
+	
+	
+	/**
+	 * 添加角色权限
+	 * @param roleid
+	 * @param functionid
+	 * @return
+	 */
+	public int AddRoleFunction(int roleid,int functionid);
+	
+	
+	/**
+	 * 通过角色id和功能id删除权限
+	 * @param roleid
+	 * @param functionid
+	 * @return
+	 *//*
+	public int DeleteRoleFunction(int roleid,int functionid);*/
+	
+}

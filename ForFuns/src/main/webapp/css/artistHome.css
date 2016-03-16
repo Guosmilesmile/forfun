@@ -1,0 +1,390 @@
+body
+{	
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	color: #000;
+}
+
+.header-top
+{
+	position: relative;
+}
+
+.content
+{
+	min-height: 500px;
+	margin-top: 50px;
+	margin-bottom: 3em;
+}
+
+.user_info
+{
+	text-align: center;
+	padding-top: 1.5em;
+}
+
+.userpic
+{
+	width: 15%;
+	border-radius: 100%;
+	border: 5px solid #eeeeee;
+}
+
+.username
+{
+	font-size: 2em;
+	margin-top: 0.7em;
+}
+
+.person_btn
+{
+	margin-top: 2em;
+}
+
+.beartist1
+{
+	background: none;
+    border: 2px solid #000;
+    color: #000;
+    padding: 0.3em 1.2em;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+	float: left;
+}
+
+.beartist1:hover
+{
+	text-decoration: none;
+	background: #fff;
+	border: 2px solid #000;
+	color: #000;
+}
+
+.beartist:hover
+{
+	background: #ff5d56;
+    color: #fff;
+    border: 2px solid #ff5d56;
+    text-decoration: none;
+}
+
+.modify
+{
+	background: none;
+    border: 2px solid #000;
+    color: #000;
+    padding: 0.3em 1.2em;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.beartist
+{
+	background: none;
+    border: 2px solid #000;
+    color: #000;
+    padding: 0.3em 1.2em;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+	float: right;
+}
+
+.modify:hover
+{
+	background: #ff5d56;
+	border: 2px solid #ff5d56;
+    color: #fff;
+    text-decoration: none;
+}
+
+.good_item
+{
+	width: 100%;
+}
+
+.good_name p
+{
+	font-size: 2em;
+	margin: 0.2em 0 0.1em;
+}
+
+.price
+{
+	display: inline-block;
+}
+
+a.readmore
+{
+    /*background: none;
+    border: 2px solid #000;
+    color: #000;*/
+    background: #ff5d56;
+    border: 2px solid #ff5d56;
+    color: #fff;
+    padding: 0.3em 1.2em;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+
+a.readmore:hover
+{
+    /*background: #ff5d56;
+    border: 2px solid #ff5d56;
+    color: #fff;*/
+    background: none;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.goods
+{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border: 1px solid #eeeeee;
+}
+
+.goods_two
+{
+	padding: 0px;
+	margin-bottom: 1em;
+
+}
+
+.learn_more
+{
+	background-color: #eeeeee;
+	text-align: center;
+	padding: 1.5em 0;
+	margin: 2em 0 0;
+	cursor: pointer;
+}
+
+.learn_more p
+{
+	font-size: 1.7em;
+	margin: 0px;
+	color: #7d7d7d;
+}
+
+
+.none
+{
+	background-color: #eeeeee;
+	text-align: center;
+	padding: 1.5em 0;
+	margin: 2em 0 0;
+	cursor: pointer;
+}
+
+.none p
+{
+	font-size: 1.7em;
+	margin: 0px;
+	color: #7d7d7d;
+}
+
+.artwork
+{
+	margin-top: 3em;
+}
+
+p.statue_now
+{
+	font-size: 1.6em;
+}
+
+.userinfo
+{
+	font-size: 1.5em;
+	padding: 0 3em;
+}
+
+@media (max-width: 992px){
+
+.ul.support
+{
+	display: none;
+}
+
+.header-top
+{
+	display: none;
+}
+
+.loca
+{
+	display: none;
+}
+
+.bar_news
+{
+	display: none;
+}
+
+.userpic
+{
+	width: 30%;
+	border-radius: 100%;
+	border: 3px solid #eeeeee;
+}
+
+.main_up
+{
+	background: #fff;
+	padding: 1.5em 0em 1.5em;
+	-webkit-box-shadow:0 0 10px rgba(149, 149, 149, 0.5);  
+	-moz-box-shadow:0 0 10px rgba(149, 149, 149, 0.5);  
+	box-shadow:0 0 10px rgba(149, 149, 149, 0.5);  
+}
+
+.username
+{
+	font-size: 1.5em;
+	margin-top: 0.5em;
+}
+
+.person_btn
+{
+	margin-top: 1em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.btn-artisthome
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+a.readmore
+{
+    background: #ff5d56;
+    color: #fff;
+    /*background: none;
+    border: 2px solid #000;
+    color: #000;*/
+    padding: 0.4em 0em;
+    font-size: 1.4em;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #ff5d56;
+}
+
+a.beartist
+{
+	font-size: 1.4em;
+}
+
+a.modify
+{
+	border: 2px solid #ff5d56;
+	border-left: 1px solid #fff;
+	background: #ff5d56;
+    color: #fff;
+    padding: 0.5em 1.2em;
+    font-size: 1.4em;
+    text-align: center;
+    text-decoration: none;
+	float: left;
+}
+
+a.beartist
+{
+	border: 2px solid #ff5d56;
+	border-right: 1px solid #fff;
+	background: #ff5d56;
+    color: #fff;
+    padding: 0.5em 1.2em;
+    font-size: 1.4em;
+    text-align: center;
+    text-decoration: none;
+	float: left;
+	
+}
+
+.artwork
+{
+	margin-top: 1.5em;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.good_name p
+{
+	font-size: 1.3em;
+}
+
+p.statue_now
+{
+	font-size: 1.2em;
+}
+
+a.readmore
+{
+	display: none;
+}
+
+p.price
+{
+	color: #ff5d56;
+	/*font-size: 2em;*/
+}
+
+p.name1
+{
+	margin-top: 0.5em;
+}
+
+.content
+{
+	min-height: 500px;
+	margin-top: 50px;
+	margin-bottom: 2em;
+}
+
+.learn_more
+{
+	padding: 1em 0;
+	margin-top: 1.5em;
+}
+
+.learn_more p
+{
+	font-size: 1.5em;
+}
+
+.beartist1
+{
+	border: 2px solid #ff5d56;
+	background: #ff5d56;
+    color: #fff;
+    padding: 0.3em 1.2em;
+    font-size: 1.4em;
+    text-align: center;
+    text-decoration: none;
+	float: left;
+}
+
+.userinfo
+{
+	font-size: 1em;
+	padding: 0 3em;
+	margin-bottom: 0.3em;
+	margin-top: 0;
+}
+
+.user_info
+{
+	padding-bottom: 0.5em;
+}
+
+
+}
+
+
+

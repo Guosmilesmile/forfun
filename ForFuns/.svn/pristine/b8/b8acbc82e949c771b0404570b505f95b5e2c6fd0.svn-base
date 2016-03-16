@@ -1,0 +1,23 @@
+package com.edu.controller;
+
+import java.util.Map;
+
+import javax.annotation.Resource;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.edu.service.IUserRoleService;
+
+/**
+ * 用户角色控制器
+ * @author Christy
+ *
+ */
+@RequestMapping("/userrole.do")
+public class UserRoleController {
+	
+	
+	@Resource
+	private IUserRoleService userRoleService;
+	
+}

@@ -1,0 +1,58 @@
+package com.edu.controller;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.edu.model.RoleBean;
+import com.edu.service.IRoleService;
+import com.edu.util.FastJsonTool;
+
+@Controller
+@RequestMapping("/role.do")
+public class RoleController {
+
+	@Autowired
+	private IRoleService roleService;
+	
+	@ResponseBody
+	@RequestMapping(params="method=getallrole")
+	public Map<String, Object> GetAllRole(){
+		List<RoleBean> list = roleService.GetAllRole();
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("roles", list);
+		return map;
+		//String str = FastJsonTool.createJsonString(list);
+		//return str;
+	}
+	
+	
+	/**
+	 * 获取分页列表
+	 * 
+	 * @param page
+	 * @param pageSize
+	 * @return
+	 */
+	@RequestMapping(params = "method=getRolebypage")
+	@ResponseBody
+	public Map<String, Object> JsonGetPageRole(
+			@RequestParam(value = "page") int page,
+			@RequestParam(value = "rows") int pageSize,
+			@RequestParam(value="selectname",defaultValue="id")String selectname,
+			@RequestParam(value="value",defaultValue="")String value) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		List<RoleBean> list = roleService.GetPageBeanFilter(RoleBean.class, page,
+				pageSize,selectname,value);
+		int total = roleService.GetPageBeanFilterTotal(RoleBean.class, page, pageSize, selectname, value);
+		map.put("rows", list);
+		map.put("total", total);
+		return map;
+	}
+}

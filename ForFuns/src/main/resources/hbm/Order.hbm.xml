@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<query name="OrderquerygetOrderByIds">  
+        <![CDATA[from Order where productid=:productid and customerid=:customerid ]]>
+	</query>
+
+	<query name="OrderquerygetCusertomerOrder">  
+        <![CDATA[select order from Order order where order.customerBean.userid = :customerid ]]>
+	</query>
+	
+	<query name="getOrderByProductid">  
+        <![CDATA[select order from Order order where order.productBean.id = :productid ]]>
+	</query>
+</hibernate-mapping>  

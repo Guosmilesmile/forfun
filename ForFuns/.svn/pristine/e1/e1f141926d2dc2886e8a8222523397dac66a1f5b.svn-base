@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+package com.edu.service;
+
+import com.edu.model.UserBean;
+
+public interface IUserService {
+	public boolean isExist(UserBean user);
+	public void save(UserBean user);
+}

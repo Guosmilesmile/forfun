@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >  
+<hibernate-mapping> 
+    <query name="ArtistqueryisExist">  
+        <![CDATA[from Customer where username=:username and password=:password and isartist=1]]>
+    </query>  
+    
+    <query name="ArtistquerygetAllEntity">  
+        <![CDATA[from Customer where isartist=1]]>
+    </query>
+
+    <!-- <query name="ArtistquerygetPageBeanFilter">  
+        <![CDATA[from CustomerBean where :selectname like :value and isartist=1]]>
+    </query> -->
+
+    <query name="ArtistquerycountEa">  
+        <![CDATA[select count(id) from ExamineArtist]]>
+    </query>
+    
+</hibernate-mapping>  

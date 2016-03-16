@@ -1,0 +1,76 @@
+.order_div
+{
+	width: 100%;
+	margin-bottom: 2.5em;
+	padding: 1.5em 1em;
+	background-color: #fff;
+	box-shadow: 0 0 15px rgba(149,149,149,0.5);
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.order_artist
+{
+	border-bottom: 1px solid #aaa;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 0.3em;
+}
+
+.artist_name
+{
+	font-size: 1.1em;
+	color: #333;
+	padding: 0px;
+}
+
+.order_statue
+{
+	font-size: 1.1em;
+	color: #ff5d56;
+	padding: 0px;
+}
+
+.order_info
+{
+	padding-top: 1.5em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.order_pic
+{
+	padding: 0px;
+}
+
+.order_label
+{
+	padding-left: 1.2em;
+}
+
+.label1
+{
+	padding-top: 0em;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.order_name
+{
+	font-size: 1.2em;
+	color: #333;
+	padding: 0 0 0 1em;
+}
+
+.order_price
+{
+	font-size: 1.2em;
+	color: #ff5d56;
+}
+
+
+.back_btn a
+{
+	color: #333;
+}
+

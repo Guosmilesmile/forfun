@@ -1,0 +1,67 @@
+body
+{
+	font-family: "Microsoft YaHei";
+	color: #333;
+	font-size: 12px;
+}
+
+.header
+{
+	padding-left: 0;
+	padding-right: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+.title_bar
+{
+	width: 100%;
+	text-align: center;
+	background: #eee;
+	/*background: #ff5d56;*/
+	padding: 1em 1em;
+	box-shadow: 0 0 10px rgba(100,100,100,0.5);
+}
+
+.title_bar p
+{
+	font-size: 1.7em;
+	color: #333;
+	margin-bottom: 0px;
+}
+
+.back_btn
+{
+	float: left;
+	position: absolute;
+}
+
+.mainer
+{
+	padding: 6em 1.5em 2em;
+}
+
+.partten
+{
+	/*color: #ff5d56;*/
+}
+
+@media(max-width: 992px){
+.head1
+{
+	position: fixed;
+	background-color: #eee;
+	box-shadow: 0 0 10px rgba(149,149,149,0.5);
+	z-index: 99999;
+	padding: 0.5em 2em;
+}
+
+ul.support li span, ul.support-right li a
+{
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #333;
+}
+}
+

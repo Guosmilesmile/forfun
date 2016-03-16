@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+	<query name="ProductqueryGetOnlineProduct">  
+        <![CDATA[select temp from Product temp inner join temp.productType type  where temp.productSell.sellMethod.id = :methodid and type.id=:typeid and ( situation = 1 or situation = 0 )]]>
+	</query>
+	 
+<!-- 
+	<query name="ProductquerygetOnlineProductTotal">  
+        <![CDATA[select temp from :classname temp inner join temp.productTypeBean type  where temp.productSellBean.sellMethodBean.id = :methodid and type.id=:typeid and ( situation = 1 or situation = 0 )]]>
+	</query>
+	-->
+	<query name="ProductqueryGetArtistProduct">  
+        <![CDATA[from Product where artistid= :artistid]]>
+	</query>
+	<query name="ProductquerygetArtistProductTotal">  
+        <![CDATA[from Product where artistid= :artistid]]>
+	</query>
+	
+</hibernate-mapping>  

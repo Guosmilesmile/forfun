@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+	<title>Payfor</title>
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../css/dom.css" rel="stylesheet" type="text/css" />
+	<link href="../css/footer2.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../css/payfor.css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+
+<script src="../js/lanrenzhijia.js"></script>
+<script>
+$(function(){
+	$(window).scroll(function(){
+		var _top = $(window).scrollTop();
+		if(_top>300){
+			$('.lanrenzhijia_top').fadeIn(600);
+		}else{
+			$('.lanrenzhijia_top').fadeOut(600);
+		}
+	});
+	$(".lanrenzhijia_top").click(function(){
+		$("html,body").animate({scrollTop:0},500);
+	});
+});
+</script>
+
+
+<script type="text/javascript">
+function addNewOne(){
+	$(".add_hidden_bg").show();
+	$(".add_hidden").show();
+}
+
+function submitNewOne(){
+	$(".add_hidden_bg").hide();
+	$(".add_hidden").hide();
+}
+
+$(document).ready(function()
+{
+	var pic_w = $(".order_pic").width();
+	var pic_h = pic_w;
+	$(".order_pic").height(pic_h);
+
+	var btn_remove_h = $(".add_div").height();
+	$(".add_remove").height(btn_remove_h);
+
+	var add_hidden_w = $(".add_new").width();
+	$(".add_hidden").width(add_hidden_w);
+
+	$(window).resize(function() {
+  		var pic_w = $(".order_pic").width();
+		var pic_h = pic_w;
+		$(".order_pic").height(pic_h);
+
+		var btn_remove_h = $(".add_div").height();
+		$(".add_remove").height(btn_remove_h);
+
+		var add_hidden_w = $(".add_new").width();
+		$(".add_hidden").width(add_hidden_w);
+  	});
+});
+</script>
+
+</head>
+
+<body>
+
+<a href="javascript:;" class="lanrenzhijia_top"></a>
+
+<div class="container-fluid header">
+	<div class="title_bar">
+		<p class="back_btn"><span class="glyphicon glyphicon-menu-left partten" aria-hidden="true"></span></p>
+		<p><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>&nbsp;&nbsp;现在购买</p>
+	</div>
+</div>
+
+<div class="container-fluid mainer">
+	<div class="row order_div">
+		<a href="artistHome.html">
+			<div class="row order_artist">
+				<p class="col-xs-12 artist_name"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;&nbsp;艺术家名称&nbsp;&nbsp;<span class="glyphicon glyphicon-menu-right partten1" aria-hidden="true"></span></p>
+			</div>
+		</a>
+		<a href="OrderDetail.html">
+			<div class="row order_info">
+				<img class="col-xs-3 order_pic" src="../image/good.jpg">
+				<div class="col-xs-9 row order_label">
+					<div class="row label1">
+						<p class="col-xs-8 order_name">订单商品名称订单商品名称</p>
+						<p class="col-xs-4 order_price">￥89.00</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="row order_div">
+		<div class="row order_artist order_add">
+			<p class="col-xs-12 artist_name"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;&nbsp;收货信息&nbsp;&nbsp;<span class="glyphicon glyphicon-menu-right partten1" aria-hidden="true"></span></p>
+		</div>
+		<div class="row order_add_1">
+			<div class="radio add_radio">
+	  			<label>
+	    			<input type="radio" name="blankRadio" id="blankRadio1" value="option1">
+	  			</label>
+			</div>
+			<div class="add_info">
+				<p>收货人：孔日天</p>
+				<p>地址：福建省厦门市思明区厦门大学</p>
+				<p>电话：15659992000</p>
+			</div>
+		</div>
+		<div class="row order_add_1">
+			<div class="radio add_radio">
+	  			<label>
+	    			<input type="radio" name="blankRadio" id="blankRadio1" value="option1">
+	  			</label>
+			</div>
+			<div class="add_info">
+				<p>收货人：孔日天</p>
+				<p>地址：福建省厦门市思明区厦门大学</p>
+				<p>电话：15659992000</p>
+			</div>
+		</div>
+		<div class="row order_add_1">
+			<div class="radio add_radio">
+	  			<label>
+	    			<input type="radio" name="blankRadio" id="blankRadio1" value="option1">
+	  			</label>
+			</div>
+			<div class="add_info">
+				<p>收货人：孔日天</p>
+				<p>地址：福建省厦门市思明区厦门大学</p>
+				<p>电话：15659992000</p>
+			</div>
+		</div>
+		<div class="row add_new">
+			<button class="new_btn" onclick="addNewOne()"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;新增地址</button>
+		</div>
+	</div>
+	<div class="row add_new">
+		<button class="new_btn1">确认购买</button>
+	</div>
+</div>
+
+<div class="row add_hidden_bg"></div>
+	<div class="row add_hidden">
+		<div class="row add_name1">
+			<button class="col-xs-offset-11 col-xs-1 new_submit1" onclick="submitNewOne()"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+		</div>
+		<div class="row add_name">
+			<p>收货人：</p>
+			<input type="text" class="col-xs-12" />
+		</div>
+		<div class="row add_name">
+			<p>地址：</p>
+			<input type="text" class="col-xs-12" />
+		</div>
+		<div class="row add_name">
+			<p>电话：</p>
+			<input type="text" class="col-xs-12" />
+		</div>
+		<div class="row add_name">
+			<button class="col-xs-12 new_submit" onclick="submitNewOne()"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;&nbsp;提交</button>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+package com.edu.daoimpl;
+
+import org.springframework.stereotype.Repository;
+
+import com.edu.base.BaseDaoImpl;
+import com.edu.dao.IUserRoleDao;
+import com.edu.model.UserRoleBean;
+
+@Repository("userRoleDao")
+public class UserRoleDaoImpl extends BaseDaoImpl<UserRoleBean> implements IUserRoleDao{
+
+	
+}

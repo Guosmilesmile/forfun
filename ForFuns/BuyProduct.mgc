@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.edu.service.IOrderService" x="1288" y="69">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.controller.ProductController" x="110" y="37">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.edu.service.IOrderService"
+            endpointName="orderService" kind="Simple"/>
+        <Association destinationClassName="com.edu.proxy.ProductProxy"
+            endpointName="productProxy" kind="Simple"/>
+        <Association
+            destinationClassName="com.edu.service.ISellMethodService"
+            endpointName="sellMethodService" kind="Simple"/>
+        <Association
+            destinationClassName="com.edu.service.IProductService"
+            endpointName="productService" kind="Simple"/>
+        <Communication destinationClassName="com.edu.service.IOrderService"/>
+        <Communication destinationClassName="com.edu.proxy.ProductProxy"/>
+        <Communication destinationClassName="com.edu.service.IProductService"/>
+    </Class>
+    <Class name="com.edu.dao.IOrderAddressDao" x="539" y="434">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.dao.IOrderDao" x="753" y="446">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.dao.IProductTypeDao" x="774" y="535">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.proxy.ProductProxy" x="72" y="614">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.dao.IProductDao"
+            endpointName="productDao" kind="Simple"/>
+        <Association destinationClassName="com.edu.dao.IProductMoneyDao"
+            endpointName="productMoneyDao" kind="Simple"/>
+        <Association
+            destinationClassName="com.edu.stragegy.ISellStrategy"
+            endpointName="sellStrategy" kind="Simple"/>
+        <Communication destinationClassName="com.edu.stragegy.ISellStrategy"/>
+    </Class>
+    <Class name="com.edu.service.ISellMethodService" x="1272" y="346">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.dao.ISellMethodDao" x="17" y="499">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.stragegy.FixedPriceStrategy" x="192" y="643">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.edu.stragegy.ISellStrategy"/>
+        <Association destinationClassName="com.edu.dao.IOrderDao"
+            endpointName="orderDao" kind="Simple"/>
+        <Association destinationClassName="com.edu.dao.IOrderAddressDao"
+            endpointName="orderAddressDao" kind="Simple"/>
+        <Association destinationClassName="com.edu.dao.IProductDao"
+            endpointName="productDao" kind="Simple"/>
+        <Association destinationClassName="com.edu.dao.IProductMoneyDao"
+            endpointName="productMoneyDao" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.stragegy.AuctionStragegy" x="1139" y="450">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.edu.stragegy.ISellStrategy"/>
+        <Association destinationClassName="com.edu.dao.IOrderDao"
+            endpointName="orderDao" kind="Simple"/>
+        <Association destinationClassName="com.edu.dao.IProductDao"
+            endpointName="productDao" kind="Simple"/>
+        <Association destinationClassName="com.edu.dao.IProductMoneyDao"
+            endpointName="productMoneyDao" kind="Simple"/>
+        <Communication destinationClassName="com.edu.dao.IOrderDao"/>
+        <Communication destinationClassName="com.edu.dao.IProductMoneyDao"/>
+    </Class>
+    <Class name="com.edu.service.IProductMoneyService" x="1238" y="226">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.dao.ICustomerDao" x="964" y="491">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.stragegy.ISellStrategy" x="1004" y="645">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.service.IProductService" x="1261" y="133">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.dao.IProductDao" x="395" y="538">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.dao.IProductMoneyDao" x="153" y="507">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

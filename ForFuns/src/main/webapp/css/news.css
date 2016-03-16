@@ -1,0 +1,131 @@
+body
+{
+	background: #fff;
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+}
+
+img
+{
+	width: 100%;
+}
+
+.header-top
+{
+	position: relative;
+}
+
+.content
+{
+	min-height: 500px;
+}
+
+.news_title
+{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.news_title p
+{
+	margin: 0px;
+	font-size: 3em;
+}
+
+.news_author
+{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.news_author p
+{
+	font-size: 1.3em;
+	margin: 0 2em;
+}
+
+.news_author p
+{
+	font-size: 1.3em;
+	margin: 0 2em;
+	display: inline-block;
+}
+
+.news_content
+{
+	width: 100%;
+	margin-top: 35px;
+}
+
+.news_content p
+{
+	margin: 0px;
+	font-size: 1.7em;
+}
+
+
+@media (max-width: 992px){
+.ul.support
+{
+	display: none;
+}
+
+.header-top
+{
+	display: none;
+}
+
+.loca
+{
+	display: none;
+}
+
+.bar_news
+{
+	display: none;
+}
+
+.userpic
+{
+	width: 30%;
+	border-radius: 100%;
+	border: 3px solid #eeeeee;
+}
+
+.main_up
+{
+	background: #fff;
+	padding: 1.5em 0em 1.5em;
+	-webkit-box-shadow:0 0 10px rgba(149, 149, 149, 0.5);  
+	-moz-box-shadow:0 0 10px rgba(149, 149, 149, 0.5);  
+	box-shadow:0 0 10px rgba(149, 149, 149, 0.5);  
+}
+
+.content
+{
+	margin-top: 20px;
+}
+
+.news_title p
+{
+	font-size: 2.5em;
+}
+
+.news_author
+{
+	margin-top: 10px;
+}
+
+.news_content
+{
+	margin-top: 20px;
+	padding: 0 2em 3em;
+}
+
+.news_content p
+{
+	font-size: 1.5em;
+	display: block;
+}
+
+}

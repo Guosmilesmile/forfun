@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.edu.model.News" x="820" y="707">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.User"
+            endpointName="userBean" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.Address" x="838" y="155">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.model.Customer" x="250" y="487">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.edu.model.CustomerAddress"
+            endpointName="customerAddressBeans" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.Order" x="155" y="784">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.OrderAddress"
+            endpointName="orderAddressBean" kind="Simple"/>
+        <Association destinationClassName="com.edu.model.Customer"
+            endpointName="customerBean" kind="Simple"/>
+        <Association destinationClassName="com.edu.model.Product"
+            endpointName="productBean" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.CustomerAddress" x="455" y="64">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.Address"
+            endpointName="addressBean" kind="Simple"/>
+        <Association destinationClassName="com.edu.model.Customer"
+            endpointName="customerBean" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.Role" x="-7" y="317">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.Function"
+            endpointName="functionBeans" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.SellMethod" x="203" y="-23">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.model.RoleFunction" x="19" y="587">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.Role"
+            endpointName="role" kind="Simple"/>
+        <Association destinationClassName="com.edu.model.Function"
+            endpointName="function" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.Product" x="192" y="132">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.ProductSell"
+            endpointName="productSellBean" kind="Simple"/>
+        <Association destinationClassName="com.edu.model.Artist"
+            endpointName="artistBean" kind="Simple"/>
+        <Association destinationClassName="com.edu.model.ProductType"
+            endpointName="productTypeBean" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.Artist" x="540" y="465">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.edu.model.Customer"/>
+    </Class>
+    <Class name="com.edu.model.OrderAddress" x="688" y="715">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.Address"
+            endpointName="addressBean" kind="Simple"/>
+        <Association destinationClassName="com.edu.model.Order"
+            endpointName="orderBean" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.ProductMoney" x="618" y="267">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.Customer"
+            endpointName="customerBean" kind="Simple"/>
+        <Association destinationClassName="com.edu.model.Product"
+            endpointName="productBean" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.ProductSell" x="67" y="8">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.SellMethod"
+            endpointName="sellMethodBean" kind="Simple"/>
+        <Association destinationClassName="com.edu.model.Product"
+            endpointName="productBean" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.UserRole" x="-125" y="870">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.Role"
+            endpointName="role" kind="Simple"/>
+        <Association destinationClassName="com.edu.model.User"
+            endpointName="user" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.ExamineArtist" x="1033" y="69">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.model.Function" x="97" y="435">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.edu.model.Advert" x="872" y="373">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.User"
+            endpointName="userBean" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.User" x="203" y="1257">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.Role"
+            endpointName="roleBeans" kind="Simple"/>
+        <Communication destinationClassName="com.edu.model.Role"/>
+    </Class>
+    <Class name="com.edu.model.Message" x="514" y="796">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.edu.model.Customer"
+            endpointName="fromCustomerBean" kind="Simple"/>
+        <Association destinationClassName="com.edu.model.Customer"
+            endpointName="toCustomerBean" kind="Simple"/>
+    </Class>
+    <Class name="com.edu.model.ProductType" x="346" y="8">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

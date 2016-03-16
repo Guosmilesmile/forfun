@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping> 
+	<query name="MessagequerygetUnReadMessage">  
+        <![CDATA[from Message where isread=0 and fromid =:fid and toid =:tid ]]>
+	</query>
+<!-- 
+	<query name="MessagequeryalertUnReadMessage">  
+        <![CDATA[update Message set :isread =1 where :fromid = :fid and :toid = :tid and :messageid <= :mid]]>
+	</query>
+	-->
+	<query name="MessagequerygetUserUnReadMessage">  
+        <![CDATA[from Message where id in(select  max(id)  from Message where toid = :tid GROUP BY fromid )]]>
+	</query>
+	
+</hibernate-mapping>  

@@ -1,0 +1,13 @@
+package com.edu.serviceimpl;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.edu.service.IRoleService;
+
+
+@Transactional
+@Service("roleService")
+public class RoleServiceImpl implements IRoleService{
+
+}

@@ -1,0 +1,167 @@
+.statue_detail
+{
+	margin-left: 0;
+	margin-right: 0;
+	background: #ff5d56;
+	padding: 1.2em;
+	box-shadow: 0 0 15px rgba(149,149,149,0.5);
+	width: 100%;
+	margin-bottom: 1.5em;
+}
+
+.statue_label
+{
+	font-size: 1.5em;
+	color: #fff;
+	margin-bottom: 0.2em;
+	padding: 0px;
+}
+
+.statue_price
+{
+	padding-left: 2.2em;
+	font-size: 1.1em;
+	color: #f8f8f8;
+	margin-bottom: 0px;
+}
+
+.receiver
+{
+	margin-left: 0;
+	margin-right: 0;
+	background: #fff;
+	padding: 1.2em;
+	box-shadow: 0 0 15px rgba(149,149,149,0.5);
+	width: 100%;
+	margin-bottom: 1.5em;
+}
+
+.receiver_name
+{
+	font-size: 1.5em;
+	color: #333;
+	margin-bottom: 0.2em;
+	padding: 0px;
+}
+
+.receiver_add
+{
+	padding-left: 2.2em;
+	font-size: 1.1em;
+	color: #333;
+	margin-bottom: 0px;
+}
+
+.order_div
+{
+	width: 100%;
+	margin-bottom: 1.5em;
+	padding: 1.5em 1em;
+	background-color: #fff;
+	box-shadow: 0 0 15px rgba(149,149,149,0.5);
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.order_artist
+{
+	border-bottom: 1px solid #aaa;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 0.3em;
+}
+
+.artist_name
+{
+	font-size: 1.1em;
+	color: #333;
+	padding: 0px;
+}
+
+.order_statue
+{
+	font-size: 1.1em;
+	color: #ff5d56;
+	padding: 0px;
+}
+
+.order_info
+{
+	padding-top: 1.5em;
+	padding-bottom: 1.3em;
+	margin-left: 0;
+	margin-right: 0;
+	border-bottom: 1px solid #aaa;
+}
+
+.order_pic
+{
+	padding: 0px;
+}
+
+.order_label
+{
+	padding-left: 1.2em;
+}
+
+.label1
+{
+	padding-top: 0em;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.order_name
+{
+	font-size: 1.2em;
+	color: #333;
+	padding: 0 0 0 1em;
+}
+
+.order_price
+{
+	font-size: 1.2em;
+	color: #ff5d56;
+}
+
+.order_sth
+{
+	margin-left: 0;
+	margin-right: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #aaa;
+}
+
+.order_id
+{
+	font-size: 1em;
+	color: #aaa;
+	margin-bottom: 0;
+	padding: 0 0.1em;
+}
+
+.order_time
+{
+	font-size: 1em;
+	padding: 0 0.1em;
+	color: #aaa;
+	margin-bottom: 0;
+}
+
+.order_btn
+{
+	padding-top: 1.3em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.order_btn button
+{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1.2em;
+	color: #333;
+	margin-right: 1em;
+}
+

@@ -1,0 +1,53 @@
+.change_table
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+.table_photo
+{
+	text-align: center;	
+	padding: 0px;
+}
+
+#preview
+{
+	width: 80%;
+	margin-left: 10%;
+	display: block;
+	/*border: 5px solid #eee;*/
+	box-shadow: 0 0 5px rgba(100,100,100,0.5);
+}
+
+.table_btn
+{
+	text-align: center;
+	padding-top: 2em;
+}
+
+#doc
+{
+	display: none;
+}
+
+.btn_change
+{
+	width: 80%;
+	/*background-color: #eee;*/
+	background-color: #ff5d56;
+	color: #fff;
+	font-size: 1.5em;
+	padding: 0.6em 0;
+	border: 1px solid #e0e0e0;
+}
+
+.table_submit
+{
+	text-align: center;
+	padding-top: 1em;
+}
+
+.title_bar p a
+{
+	color: #333;
+}

@@ -1,0 +1,12 @@
+package com.edu.daoimpl;
+
+import org.springframework.stereotype.Repository;
+
+import com.edu.base.BaseDaoImpl;
+import com.edu.dao.IRoleFunctionDao;
+import com.edu.model.RoleFunctionBean;
+
+@Repository("roleFunctionDao")
+public class RoleFunctionDaoImpl extends BaseDaoImpl<RoleFunctionBean> implements IRoleFunctionDao{
+	
+}
